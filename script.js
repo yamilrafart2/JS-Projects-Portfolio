@@ -30,7 +30,7 @@ function processResult(results) {
 
   for (let i = 0; i < results.length; i++) {
     let transcript = results[i][0].transcript;
-    transcript.replace("\n", "<br>");
+    transcript = transcript.replace(/\n/g, "<br>");
 
     if (results[i].isFinal) {
       finalTranscript += transcript;
@@ -43,9 +43,7 @@ function processResult(results) {
 }
 
 function stopConverting() {
-
-    if (recognition) {
-        recognition.stop();
-    }
-
+  if (recognition) {
+    recognition.stop();
+  }
 }
