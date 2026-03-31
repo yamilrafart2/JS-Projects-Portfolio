@@ -1,37 +1,30 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="es-ES">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speech To Text</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>JS Projects Portfolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
-    <main class="container">
-      <h2>Speech to Text Converter</h2>
+    <header>
+      <h1>Mis JS Projects</h1>
+      <p>Proyectos para dominar JavaScript</p>
+    </header>
 
-      <section id="result"></section>
+    <main class="projects-grid">
+      <a href="./01-speech-to-text/index.html" class="card">
+        <div class="card-icon">🎙️</div>
+        <h3>01. Speech to Text</h3>
+        <p>Reconocimiento de voz mediante la API Web Speech.</p>
+        <span class="tag">Intermedio</span>
+      </a>
 
-      <section class="container__button">
-        <button onclick="startConverting()">
-          <i class="fa-solid fa-microphone"></i>
-        </button>
-
-        <button onclick="stopConverting()">
-          <i class="fa-solid fa-stop"></i>
-        </button>
-      </section>
+      <div class="card disabled">
+        <div class="card-icon">⏳</div>
+        <h3>02. Next Project</h3>
+        <p>Coming soon...</p>
+      </div>
     </main>
-
-    <script src="script.js"></script>
   </body>
 </html>
