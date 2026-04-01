@@ -64,7 +64,7 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50px);
+    transform: translateX(-50%);
 }
 
 .black:active {
